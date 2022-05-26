@@ -5,6 +5,7 @@ import CardGiovanni from './components/Cards/CardGiovanni'
 import styled from "styled-components";
 import CardMaria from './components/Cards/CardMaria'
 import CardDouglas from './components/Cards/CardDouglas'
+import CardVictor from './components/Cards/CardVictor'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     <CardGiovanni/>
     <CardMaria/>
     <CardDouglas/>
+    <CardVictor/>
     
 
     
