@@ -1,26 +1,26 @@
 import React from "react";
 import styles from "./Card.module.css";
-import giovanni from "../../Assets/Giovanni.png";
+import maria from "../../Assets/Maria.png";
 import linkedin from "../../Assets/linkedin.png";
 import github from "../../Assets/github.png";
 
-const CardGiovanni = () => {
+const CardMaria = () => {
   return (
     <div>
       <div className={styles.card}>
-        <img src={giovanni} className={styles.imgPerfil} />
-        <h2>Giovanni Clayton</h2>
+        <img src={maria} className={styles.imgPerfil} />
+        <h2>Maria Santana</h2>
         <p>
-          Desenvolvedor Web Full Stack | Front-End | HTML | CSS | JavaScript
+        Desenvolvedora Full Stack | HTML | CSS | Javascript | React | SQLt
         </p>
         <div className={styles.icones}>
           <a
-            href="https://www.linkedin.com/in/giovanni-clayton/"
+            href="https://www.linkedin.com/in/santanamariarita/"
             target="_blank"
           >
             <img src={linkedin} className={styles.icone} />
           </a>
-          <a href="https://github.com/Gclayton0207" target="_blank">
+          <a href="https://github.com/55021" target="_blank">
             <img src={github} className={styles.icone} />
           </a>
         </div>
@@ -29,4 +29,4 @@ const CardGiovanni = () => {
   );
 };
 
-export default CardGiovanni;
+export default CardMaria;

@@ -16,6 +16,11 @@
   flex-direction: column;
   text-align: center;
 }
+.card:hover {
+  
+  transform: scale(1.025);
+  transition: .5s;
+}
 
 .card h2 {
   z-index: 1;
@@ -47,6 +52,11 @@ a,
   justify-content: space-evenly;
   margin-top: 0.8rem;
 }
+.icones:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: .5s;
+}
 
 .card::before {
   content: "";
@@ -54,8 +64,8 @@ a,
   width: 100px;
   background-image: linear-gradient(
     180deg,
-    rgb(0, 183, 255),
-    rgb(255, 48, 255)
+    #f2f2f2,
+    #f900bf
   );
   height: 130%;
   animation: rotBGimg 3s linear infinite;
