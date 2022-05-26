@@ -1,11 +1,18 @@
 .App {
   text-align: center;
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 main{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-  grid-template-rows: 1fr 1fr 1fr;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 auto;
   
 }
 .App-logo {
