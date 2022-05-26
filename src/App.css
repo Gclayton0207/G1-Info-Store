@@ -2,8 +2,11 @@
   text-align: center;
 }
 main{
-  display:flex;
-  justify-content:space-evenly;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;
+  grid-template-rows: 1fr 1fr 1fr;
+  
 }
 .App-logo {
   height: 40vmin;
@@ -42,4 +45,15 @@ main{
 
 button {
   font-size: calc(10px + 2vmin);
+}
+@media screen and (max-width: 768px){
+main{
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+  grid-template-columns: 1fr ;
+  justify-content:center;
+  align-items:center;
+  
+}
 }

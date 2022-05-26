@@ -91,3 +91,11 @@ a,
   inset: 5px;
   border-radius: 15px;
 }
+@media screen and (max-width: 768px){
+ .card{
+   display:flex;
+   
+   
+ }
+
+}
