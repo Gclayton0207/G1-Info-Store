@@ -1,7 +1,20 @@
 .App {
   text-align: center;
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+main{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 5em;
+  justify-content: space-evenly;
+  width: 85%;
+  margin: 0 auto;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -39,4 +52,15 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+@media screen and (max-width: 768px){
+main{
+  display:flex;
+  flex-direction: column;
+  gap: 1em;
+  grid-template-columns: 1fr ;
+  justify-content:center;
+  align-items:center;
+  
+}
 }
