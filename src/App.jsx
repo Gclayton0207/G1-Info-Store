@@ -7,6 +7,7 @@ import CardMaria from './components/Cards/CardMaria'
 import CardDouglas from './components/Cards/CardDouglas'
 import CardVictor from './components/Cards/CardVictor'
 import CardOthon from './components/Cards/CardOthon'
+import Loader from './components/loading/Loader';
 
 
 function App() {
@@ -17,12 +18,8 @@ function App() {
   <h1>G1 info store</h1>
   
   <main>
+    <Loader/>
     
-    <CardGiovanni/>
-    <CardMaria/>
-    <CardDouglas/>
-    <CardVictor/>
-    <CardOthon/>
     
 
     
