@@ -52,4 +52,56 @@
       transform: rotate(-360deg);
     }
   }
-  
+  @media screen and (max-width: 768px){
+    .loader {
+      width: 10rem;
+      height: 10rem;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border-top: 5px solid #f900bf;
+      position: relative;
+      animation: load 2s linear infinite;
+    }
+    
+    .loader::before,
+    .loader::after {
+      content: "";
+      width: 10rem;
+      height: 10rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      box-sizing: border-box;
+      border-radius: 50%;
+    }
+    
+    .loader::before {
+      border-top: 5px solid #f2f2f2;
+      transform: rotate(120deg);
+    }
+    
+    .loader::after {
+      border-top: 5px solid #4700d8;
+      transform: rotate(240deg);
+    }
+    
+    .loader span {
+      position: absolute;
+      font-size: small;
+      width: 10rem;
+      height: 10rem;
+      color: #fff;
+      text-align: center;
+      line-height: 10rem;
+      animation: a2 2s linear infinite;
+    }
+    
+    @keyframes load {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+  }
+
+    
