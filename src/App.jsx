@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
-import CardGiovanni from './components/Cards/CardGiovanni'
+import { useEffect, useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import CardGiovanni from "./components/Cards/CardGiovanni";
 import styled from "styled-components";
-import CardMaria from './components/Cards/CardMaria'
-import CardDouglas from './components/Cards/CardDouglas'
-import CardVictor from './components/Cards/CardVictor'
-import CardOthon from './components/Cards/CardOthon'
-
+import CardMaria from "./components/Cards/CardMaria";
+import CardDouglas from "./components/Cards/CardDouglas";
+import CardVictor from "./components/Cards/CardVictor";
+import CardOthon from "./components/Cards/CardOthon";
+import Loader from "./components/loading/Loader";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [count, SetLoader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      SetLoader(false);
+    }, 5000);
+  });
   return (
-  <>
-  <h1>G1 info store</h1>
-  
-  <main>
-    
-    <CardGiovanni/>
-    <CardMaria/>
-    <CardDouglas/>
-    <CardVictor/>
-    <CardOthon/>
-    
+    <>
+      <div className={!count ? "disabled" : ""}>
+        <Loader />
+      </div>
 
-    
-    </main>
+      <main className={count ? "disabled" : ""}>
+        <CardGiovanni />
+        <CardMaria />
+        <CardVictor />
+        <CardOthon />
+        <CardDouglas />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

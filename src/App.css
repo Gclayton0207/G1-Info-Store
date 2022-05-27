@@ -12,8 +12,11 @@ main{
   gap: 5em;
   justify-content: space-evenly;
   width: 85%;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
+}
+.disabled{
+  position:fixed;
+  opacity: 0;
 }
 .App-logo {
   height: 40vmin;
