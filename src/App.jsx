@@ -8,6 +8,8 @@ import CardDouglas from "./components/Cards/CardDouglas";
 import CardVictor from "./components/Cards/CardVictor";
 import CardOthon from "./components/Cards/CardOthon";
 import Loader from "./components/loading/Loader";
+import Footer from "./components/Footer/index";
+import Header from './components/Header/index';
 
 function App() {
   const [count, SetLoader] = useState(true);
@@ -21,6 +23,7 @@ function App() {
       <div className={!count ? "disabled" : ""}>
         <Loader />
       </div>
+      <Header className={count ? "disabled" : ""}/>
 
       <main className={count ? "disabled" : ""}>
         <CardGiovanni />
@@ -29,6 +32,7 @@ function App() {
         <CardOthon />
         <CardDouglas />
       </main>
+      <Footer/>
     </>
   );
 }
