@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 import CardGiovanni from "./components/Cards/CardGiovanni";
-import styled from "styled-components";
+import styles from "./App.css";
 import CardMaria from "./components/Cards/CardMaria";
 import CardDouglas from "./components/Cards/CardDouglas";
 import CardVictor from "./components/Cards/CardVictor";
@@ -16,6 +16,7 @@ function App() {
       SetLoader(false);
     }, 5000);
   });
+
   return (
     <>
       <div className={!count ? "disabled" : ""}>
