@@ -4,17 +4,28 @@ import Home from "../Pages/Home/Home"
 import Sobre from "../Pages/Sobre/Sobre"
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import styled from 'styled-components';
 import '../index.css';
+
+const Container = styled.main`
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
 
 const Routes = () => {
   return (
     <BrowserRouter>
+      <Container>
         <Header/>
         <Switch>
             <Route path='/'  element={<Home />}/>
             <Route path='/sobre' element={<Sobre/>}/>
         </Switch>
       <Footer/>
+      </Container>
     </BrowserRouter>
   )
 }

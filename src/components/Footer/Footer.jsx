@@ -10,8 +10,6 @@ const Footer = styled.footer`
   padding: 30px 50px;
   color: white;
   min-height: 3rem;
-  position: absolute;
-  bottom: 0;
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
