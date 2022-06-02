@@ -8,8 +8,8 @@ import CardDouglas from "./components/Cards/CardDouglas";
 import CardVictor from "./components/Cards/CardVictor";
 import CardOthon from "./components/Cards/CardOthon";
 import Loader from "./components/loading/Loader";
-import Footer from "./components/Footer/index";
-import Header from './components/Header/index';
+import Footer from "./components/Footer/Footer";
+import Header from './components/Header/Header';
 
 function App() {
   const [count, SetLoader] = useState(true);

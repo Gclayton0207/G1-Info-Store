@@ -1,28 +1,33 @@
 import { useEffect, useState } from "react";
 import "./Home";
-import styles from "./Home.module.css";
-
+import styled from 'styled-components';
 import Loader from "../../components/loading/Loader";
 
+const Title = styled.h1`
+  padding-top: 20px;
+  font-size: 30px;
+  color: white;
+`
 
 function Home() {
-  const [count, SetLoader] = useState(true);
+  const [loader, setLoader] = useState(true);
+
   useEffect(() => {
     setTimeout(() => {
-      SetLoader(false);
-    }, 5000);
-  });
+      setLoader(false);
+    }, 3000);
+  }, []);
   
   return (
     <>
    
-      <div className={!count ? "disabled" : ""}>
+      <div className={!loader ? "disabled" : ""}>
         <Loader />
       </div>
 
-      <main className={count ? "disabled" : ""}>
+      <main className={loader ? "disabled" : ""}>
       
-       <h1 className={"titulo"}>Home page</h1>
+       <Title>Bem vindos à G1 Info Store</Title>
 
       </main>
       

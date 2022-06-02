@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Header = styled.nav`
     font-weight: 100;
-    background-color: #F900D9;
+    background-color: rgb(12, 0, 36);
     width: 150px;
     height: 100%;
     padding-left: 50px;
@@ -20,18 +21,17 @@ const Header = styled.nav`
   }
 `
 const Title = styled.div`
-    top: 50%;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     transform: rotate(270deg);
-    left: 15px;
+    left: 0;
     font-weight: 800;
     font-size: 15px;
     cursor: pointer;
-    color: #000;
+    color: #fff;
 `
 
 const Navbar = styled.ul`
@@ -48,7 +48,7 @@ const NavItem = styled.li`
     list-style-type: none;
 `
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
     display: block;
     text-decoration: none;
     color: inherit;
@@ -63,13 +63,10 @@ const NavLink = styled.a`
 export default () => {
   return (
     <Header>
-        <Title>G1</Title>
+        <Title>M E N U</Title>
         <Navbar>
-            <NavItem><NavLink href="#">Home</NavLink></NavItem>
-            <NavItem><NavLink href="#">About</NavLink></NavItem>
-            <NavItem><NavLink href="#">Work</NavLink></NavItem>
-            <NavItem><NavLink href="#">Resources</NavLink></NavItem>
-            <NavItem><NavLink href="#">Contact</NavLink></NavItem>
+            <NavItem><NavLink to="/">Home</NavLink></NavItem>
+            <NavItem><NavLink to="/sobre">Sobre</NavLink></NavItem>
         </Navbar>
     </Header>
   )
