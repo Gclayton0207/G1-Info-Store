@@ -67,6 +67,7 @@ export default () => {
         <Navbar>
             <NavItem><NavLink to="/">Home</NavLink></NavItem>
             <NavItem><NavLink to="/sobre">Sobre</NavLink></NavItem>
+            <NavItem><NavLink to="/painel">Painel</NavLink></NavItem>
         </Navbar>
     </Header>
   )
