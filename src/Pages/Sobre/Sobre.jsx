@@ -9,7 +9,7 @@ import styles from "./Sobre.module.css";
 const Sobre = () => {
   return (
     <>
-      <h1> Equipe G1 info</h1>
+      <h1 className={styles.title}> Equipe G1 info</h1>
       <main>
         <CardGiovanni />
         <CardMaria />
