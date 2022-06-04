@@ -1,0 +1,104 @@
+.card {
+    width: 190px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(163deg, #ff66c4 0%, #ffffff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #0c0024;
+    border-radius:20px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+   .card .img {
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 25%;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    background: #f2f2f3;
+   }
+   
+.card .info {
+    text-align: center;
+    margin-top: 0.4em;
+    background: linear-gradient(120deg, rgb(246, 246, 246) 0%, rgba(0,86,255,1) 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+   
+   .card .info > span {
+    font-weight: bold;
+    font-size: 1.2em;
+   }
+   .containerBotom{
+display: flex;
+justify-content:center;
+width: 100%;
+   }
+   
+   button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .20em solid var(--glow-color);
+
+    color: var(--glow-color);
+    font-size: 40%;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin-top: 1em;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
