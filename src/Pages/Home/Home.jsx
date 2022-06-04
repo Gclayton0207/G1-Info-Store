@@ -29,6 +29,8 @@ function Home() {
       
        <Title>Bem vindos à G1 Info Store</Title>
 
+       
+
       </main>
       
     </>
