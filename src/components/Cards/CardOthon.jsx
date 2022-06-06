@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
-import othon from "../../Assets/Othon.png";
-import linkedin from "../../Assets/linkedin.png";
-import github from "../../Assets/github.png";
+import othon from "../../Assets/img/Othon.png";
+import linkedin from "../../Assets/img/linkedin.png";
+import github from "../../Assets/img/github.png";
 
 const CardOthon = () => {
   return (

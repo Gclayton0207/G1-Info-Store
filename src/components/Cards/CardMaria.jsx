@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
-import maria from "../../Assets/Maria.png";
-import linkedin from "../../Assets/linkedin.png";
-import github from "../../Assets/github.png";
+import maria from "../../Assets/img/Maria.png";
+import linkedin from "../../Assets/img/linkedin.png";
+import github from "../../Assets/img/github.png";
 
 const CardMaria = () => {
   return (
