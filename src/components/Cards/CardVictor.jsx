@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
-import victor from "../../Assets/Victor.png";
-import linkedin from "../../Assets/linkedin.png";
-import github from "../../Assets/github.png";
+import victor from "../../Assets/img/Victor.png";
+import linkedin from "../../Assets/img/linkedin.png";
+import github from "../../Assets/img/github.png";
 
 const CardVictor = () => {
   return (

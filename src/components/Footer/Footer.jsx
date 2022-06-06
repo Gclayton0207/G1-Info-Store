@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaDiscord, FaFacebookSquare, FaInstagram } from 'react-icons/fa';
+import discord from '../../Assets/img/discord.svg';
+import facebook from '../../Assets/img/facebook.svg';
+import instagram from '../../Assets/img/instagram.svg';
 
 const Footer = styled.footer`
   box-sizing: border-box;
@@ -43,27 +45,11 @@ const Section = styled.div`
 
 const Icons = styled.div`
   display: flex;
-  gap: 5px;
+  gap: 7px;
 `
 
-const Icon1 = styled(FaDiscord)`
-  font-size: 1.3em;
-
-  &:hover {
-    cursor: pointer;
-  }
-`
-
-const Icon2 = styled(FaFacebookSquare)`
-  font-size: 1.3em;
-
-  &:hover {
-    cursor: pointer;
-  }
-`
-
-const Icon3 = styled(FaInstagram)`
-  font-size: 1.3em;
+const Icon = styled.img`
+  height: 1.3em;
 
   &:hover {
     cursor: pointer;
@@ -93,9 +79,9 @@ export default () => {
       </Section>
       <Section>
         <Icons>
-          <Icon1/>
-          <Icon2/>
-          <Icon3/>
+          <Icon src={discord}/>
+          <Icon src={facebook}/>
+          <Icon src={instagram}/>
         </Icons>
         <Copyright>G1 Info Store © 2022</Copyright>
       </Section>
