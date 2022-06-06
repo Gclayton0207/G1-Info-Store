@@ -6,12 +6,12 @@
 }
 .card {
     width: 190px;
-    height: 254px;
+    height: 253px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(163deg, #ff66c4 0%, #ffffff 100%);
-    border-radius: 20px;
+    border-radius: 25px;
     transition: all .3s;
    }
    
@@ -154,4 +154,23 @@ button {
        transition: none;
        transition-delay: none;
       }
+
+      @media screen and (max-width: 768px){
+         main{
+           display:flex;
+           flex-direction: column;
+           gap: 1em;
+           grid-template-columns: 1fr ;
+           justify-content:center;
+           align-items:center;
+           
+         }
+         }
       
+@media screen and (max-width: 768px){
+.ProdutosContainer{
+          display:grid;
+            grid-template-columns:1fr 1fr;
+            justify-items: start;
+         }
+      }
