@@ -18,14 +18,7 @@
     width: 85%;
     margin: 0 auto; 
   }
-  .containerSection{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    width:60%;
-    margin: 0 auto;
-    justify-content:space-between;
-  }
+  
   .disabled{
     position:fixed;
     opacity: 0;

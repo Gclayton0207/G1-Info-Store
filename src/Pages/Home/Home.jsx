@@ -3,7 +3,7 @@ import "./Home";
 import styled from 'styled-components';
 import styles from "../Home/Home.module.css";
 import Loader from "../../components/loading/Loader";
-import AOE from "../../components/Produtos/ProdutoAgeOfEmpires";
+import Produtos from "../../components/Produtos/Produtos";
 
 const Title = styled.h1`
   padding-top: 20px;
@@ -30,19 +30,8 @@ function Home() {
       <main className={loader ? "disabled" : ""}>
        <Title>Bem vindos à G1 Info Store</Title>
       </main>
-      <div className={styles.containerSection}>
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
-      <AOE />
+      <div className={loader ? "disabled" : ""}>
+      <Produtos />
       </div>
     </>
   );
