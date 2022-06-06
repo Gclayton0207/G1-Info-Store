@@ -165,12 +165,10 @@ button {
            align-items:center;
            
          }
+         .ProdutosContainer{
+            display:grid;
+              grid-template-columns:1fr;
+              justify-items: start;
+           }
          }
       
-@media screen and (max-width: 768px){
-.ProdutosContainer{
-          display:grid;
-            grid-template-columns:1fr 1fr;
-            justify-items: start;
-         }
-      }
