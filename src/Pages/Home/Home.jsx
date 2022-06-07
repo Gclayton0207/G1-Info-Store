@@ -15,13 +15,14 @@ const Title = styled.h1`
 
 function Home() {
   const [loader, setLoader] = useState(true);
-  const [busca,setBusca] = useState();
+  const [busca,setBusca] = useState("");
+
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
     }, 3000);
   }, []);
-  
+
   return (
     <>
    
@@ -34,11 +35,11 @@ function Home() {
       </main>
       
       <div className={loader ? "disabled" : ""}>
-      <Buscador/>
+      <Buscador busca={busca} setBusca={setBusca}/>
       </div>
-      
+
       <div className={loader ? "disabled" : ""}>
-      <Produtos />
+      <Produtos busca={busca} />
       </div>
     </>
   );

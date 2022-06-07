@@ -3,10 +3,11 @@ import styles from "../Produtos/Produtos.module.css";
 import G1A from "../../Assets/G1A.png";
 import axios from "axios";
 
-const Produtos = () => {
+const Produtos = ({busca}) => {
   const [softwares, setSoftwares] = useState([]);
   const [hardwares, setHardwares] = useState([]);
   const [produtos, setProdutos] = useState([]);
+  const [lista, setLista] = useState([]);
 
   
   useEffect(() => {
@@ -40,9 +41,13 @@ const Produtos = () => {
 
   }, []);
 
-  
+  useEffect(() => {
+    const novaLista = produtos.filter(item => item.nome.startsWith(busca));
+    setLista(novaLista);
+  },[busca]);
 
  return(
+   <>{ busca===''? 
    <div  className={styles.ProdutosContainer}>
    {produtos.length>0 && produtos.map((software, index)=> (
         <div key={index}className={styles.card}>
@@ -66,7 +71,29 @@ const Produtos = () => {
    ))
         }
  </div>
-        
+      : <div  className={styles.ProdutosContainer}>
+      {lista.length>0 && lista.map((produto, index)=> (
+           <div key={index}className={styles.card}>
+             <div className={styles.card2}>
+               <img src={G1A} className={styles.img} />
+               <div className={styles.info}>
+                 <p>{produto.nome}</p>
+                 <p>R${produto.preço.toFixed(2).replace(".", ",")}</p>
+               </div>
+               <div className={styles.containerBotom}>
+                 <button className={styles.button}>
+                   {" "}
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                   <span></span> Comprar
+                 </button>
+               </div>
+             </div>
+             </div>
+      ))
+           }
+    </div> } </>
     )
     
 }
