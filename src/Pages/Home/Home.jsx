@@ -3,7 +3,9 @@ import "./Home";
 import styled from 'styled-components';
 import styles from "../Home/Home.module.css";
 import Loader from "../../components/loading/Loader";
+import Buscador from "../../components/Buscador/Buscador";
 import Produtos from "../../components/Produtos/Produtos";
+
 
 const Title = styled.h1`
   padding-top: 20px;
@@ -13,7 +15,7 @@ const Title = styled.h1`
 
 function Home() {
   const [loader, setLoader] = useState(true);
-
+  const [busca,setBusca] = useState();
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
@@ -30,6 +32,11 @@ function Home() {
       <main className={loader ? "disabled" : ""}>
        <Title>Bem vindos à G1 Info Store</Title>
       </main>
+      
+      <div className={loader ? "disabled" : ""}>
+      <Buscador/>
+      </div>
+      
       <div className={loader ? "disabled" : ""}>
       <Produtos />
       </div>
