@@ -7,7 +7,7 @@
 	font-size: 0.8rem;
 	font-family: sans-serif;
 	background-color: white;
-	border: 2px solid black;
+	border: 2px solid white;
 	letter-spacing: 0.1em;
 	width: 8.5rem;
 	height: 1.5em;
@@ -28,7 +28,7 @@ nav ul li::before {
 	position: absolute;
 	width: 1.5em;
 	height: inherit;
-	background-color: black;
+	background-color: rgb(12, 0, 36);
 	border-radius: 50%;
 	top: 0;
 	left: -0.75em;

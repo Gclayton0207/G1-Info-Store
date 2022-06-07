@@ -41,7 +41,8 @@
 
 .loader span {
   position: absolute;
-  font-size: small;
+  font-size: medium;
+  font-weight: bold;
   width: 20rem;
   height: 20rem;
   color: #fff;

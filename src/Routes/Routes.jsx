@@ -4,7 +4,7 @@ import Home from "../Pages/Home/Home"
 import Sobre from "../Pages/Sobre/Sobre"
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Painel from '../components/Painel/Painel';
+import Painel from '../Pages/Painel/Painel';
 import styled from 'styled-components';
 import '../index.css';
 
