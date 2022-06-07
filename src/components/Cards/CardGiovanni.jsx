@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
-import giovanni from "../../Assets/Giovanni.png";
-import linkedin from "../../Assets/linkedin.png";
-import github from "../../Assets/github.png";
+import giovanni from "../../Assets/img/Giovanni.png";
+import linkedin from "../../Assets/img/linkedin.png";
+import github from "../../Assets/img/github.png";
 
 const CardGiovanni = () => {
   return (

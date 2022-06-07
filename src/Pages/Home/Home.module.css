@@ -9,6 +9,7 @@
   }
   .titulo{
      color:aliceblue;
+     
   }
   main{
     display:flex;
@@ -18,6 +19,7 @@
     width: 85%;
     margin: 0 auto; 
   }
+  
   .disabled{
     position:fixed;
     opacity: 0;

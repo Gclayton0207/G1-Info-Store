@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
-import douglas from "../../Assets/Douglas.png";
-import linkedin from "../../Assets/linkedin.png";
-import github from "../../Assets/github.png";
+import douglas from "../../Assets/img/Douglas.png";
+import linkedin from "../../Assets/img/linkedin.png";
+import github from "../../Assets/img/github.png";
 
 const CardDouglas = () => {
   return (

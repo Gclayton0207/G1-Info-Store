@@ -23,7 +23,11 @@ Contenha as funcionalidades básicas do CRUD:
 
 Extras:
 
+<<<<<<< HEAD
 * Utilização da biblioteca Styled Components
+=======
+Utilização da biblioteca Styled Components
+>>>>>>> 665813a23a51e40334f206a7248601d775cd397c
 * Animações extra
 * Validação dos campos do formulário além do simples
 * Criação de hooks customizados
@@ -31,4 +35,8 @@ Extras:
 * Desenvolvimento de testes de interface utilizando enzyme Documentação da
 interface
 
+<<<<<<< HEAD
 <a target="_blank" href="https://icons8.com/icon/84872/facebook">Facebook</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+=======
+https://www.freecodecamp.org/news/how-to-create-react-hooks/ useWindowSize
+>>>>>>> 665813a23a51e40334f206a7248601d775cd397c
