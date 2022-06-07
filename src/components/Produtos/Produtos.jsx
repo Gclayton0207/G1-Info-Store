@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "../Produtos/Produtos.module.css";
-import aoe from "../../Assets/Produtos/AOE.svg";
+import G1A from "../../Assets/G1A.png";
 import axios from "axios";
 
 const Produtos = () => {
@@ -47,7 +47,7 @@ const Produtos = () => {
    {produtos.length>0 && produtos.map((software, index)=> (
         <div key={index}className={styles.card}>
           <div className={styles.card2}>
-            <img src={aoe} className={styles.img} />
+            <img src={G1A} className={styles.img} />
             <div className={styles.info}>
               <p>{software.nome}</p>
               <p>R${software.preço.toFixed(2).replace(".", ",")}</p>
