@@ -42,7 +42,7 @@ const Produtos = ({busca}) => {
   }, []);
 
   useEffect(() => {
-    const novaLista = produtos.filter(item => item.nome.startsWith(busca));
+    const novaLista = produtos.filter(item => item.nome.toLowerCase().startsWith(busca.toLowerCase()));
     setLista(novaLista);
   },[busca]);
 
