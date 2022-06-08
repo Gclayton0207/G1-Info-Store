@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from "../Buscador/Buscador.module.css"
+import styles from "./Buscador.module.css"
 
 const Buscador = ({busca,setBusca}) => {
    

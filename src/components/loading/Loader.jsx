@@ -5,7 +5,7 @@ const Loader = () => {
   return (
     <div className={styles.container}>
     <div className={styles.loader}>
-      <span>Bem vindos a G1 Info Store</span>
+      <span>G1 Info Store</span>
     </div></div>
   )
 }
