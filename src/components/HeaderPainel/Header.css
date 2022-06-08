@@ -1,0 +1,91 @@
+header {
+    background-color: #2F3644;
+}
+
+.container {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    /* margin-top:-60px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;  
+    background: linear-gradient(120deg, rgb(12, 0, 36) 0%, rgba(174,0,255) 100%);
+}
+
+.logo h1 {
+    font-family: Heebo;
+    font-weight: 700;
+    color: #29EBAA;
+
+    cursor: pointer;
+}
+
+.btn-newPost button{
+    font-size: 1.2rem;
+    font-family: Heebo;
+    font-weight: 700;
+
+    background-color: #447CE2;
+    border: 0;
+
+    color: #fff;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.btn-newPost button:hover {
+    transition: 0.2s;
+    background-color: #538af0;
+}
+
+#bt-style button{
+	margin-left: 50px;
+    font-size: calc(10px + 2vmin);
+    margin-top: 20px;
+	background-color: #3DECB1;
+}
+
+#just-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.update-btn{ 
+	background: linear-gradient(120deg, rgb(246, 246, 246) 0%, rgba(0,86,255,1) 100%);
+    color: white;
+}
+
+.del-btn{
+    background:linear-gradient(120deg,rgb(246, 246, 246) -50%, rgb(241, 45, 45) 100%);
+    color: white;
+    
+}
+
+
+
+.btn-post button{
+    font-family: Heebo;
+    font-weight: 800;
+    height: 50px;
+    border-radius: 20px;
+    padding: 0.3em 0.5em;
+    outline: none;
+    border: 1px solid #303030;
+    padding: 5px 50px;
+    color: white;
+	background: linear-gradient(120deg, rgb(246, 246, 246) -20%, rgb(61,236,177) 50%);
+    cursor: pointer;
+
+}
+
+.error-message {
+    color: white;
+
+}

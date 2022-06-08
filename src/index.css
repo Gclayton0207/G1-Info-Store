@@ -13,3 +13,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.quadrado{
+  background: linear-gradient(120deg, rgb(12, 0, 36) 0%, rgba(174,0,255) 100%);
+  padding: 30px 70px;
+  border-radius: 15px;
+  color:white;
+}

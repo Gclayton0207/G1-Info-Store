@@ -56,6 +56,7 @@ main{
 button {
   font-size: calc(10px + 2vmin);
 }
+
 @media screen and (max-width: 768px){
 main{
   display:flex;

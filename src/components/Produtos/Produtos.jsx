@@ -50,7 +50,10 @@ const Produtos = () => {
             <img src={G1A} className={styles.img} />
             <div className={styles.info}>
               <p>{software.nome}</p>
-              <p>R${software.preço.toFixed(2).replace(".", ",")}</p>
+              
+              {/* Deixei o metodo toFixed comentado porque estava quebrado e não estava atualizando produtos que estava sendo adicionado no painel */}
+              {/* <p>R${software.preço.toFixed(2).replace(".", ",")}</p> */}
+              <p>{software.preço}</p>
             </div>
             <div className={styles.containerBotom}>
               <button className={styles.button}>
