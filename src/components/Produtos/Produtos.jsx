@@ -44,7 +44,7 @@ const Produtos = ({busca}) => {
   useEffect(() => {
     const novaLista = produtos.filter(item => item.nome.toLowerCase().includes(busca.toLowerCase()));
     setLista(novaLista);
-  },[busca]);
+  }, [busca]);
 
  return(
    <>{ busca===''? 
