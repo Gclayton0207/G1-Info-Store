@@ -1,6 +1,6 @@
 # Projeto final: Módulo 5 <br> Front-end React.JS — Loja de informática 💻
 
-#### **Sobre o projeto**
+### **Sobre o projeto**
 
 ---
 
@@ -10,7 +10,7 @@
 
 ---
 
-#### **Rotas**
+### **Rotas**
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-#### **Acesso ao projeto**
+### **Acesso ao projeto**
 
 ---
 
@@ -52,7 +52,7 @@ Por fim, para executar o projeto, o comando `npm run dev` deve ser inserido no t
 
 Para interagir com o projeto sem a necessidade de instalação local, o endereço https://g1infostore.netlify.app/ pode ser acessado.
 
-#### **Participantes**
+### **Participantes**
 
 ---
 
