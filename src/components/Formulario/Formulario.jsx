@@ -43,7 +43,6 @@ export default ({tipo}) => {
                     axios.post(`https://projeto-final-m4.herokuapp.com/hardware`, {nome: nome, marca: marca, preço: preço, tipo: tipoInput})
                     .then(response => {
                         console.log(response)
-                        alert('Sucesso!')
                         })
                 } catch (err) {
                     console.error(err);
@@ -64,7 +63,6 @@ export default ({tipo}) => {
                     axios.delete(`https://projeto-final-m4.herokuapp.com/hardware/${ID}`)
                     .then(response => {
                         console.log(response)
-                        alert('Sucesso!')
                         })
                 } catch (err) {
                     console.error(err);
