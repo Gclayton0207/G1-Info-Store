@@ -5,8 +5,10 @@ import Sobre from "../Pages/Sobre/Sobre"
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Painel from '../components/Painel/Painel';
+import Cadastro from '../components/Cadastro/Cadastro'
 import styled from 'styled-components';
 import '../index.css';
+
 
 const Container = styled.main`
   width: 100%;
@@ -25,6 +27,7 @@ const Routes = () => {
             <Route path='/'  element={<Home />}/>
             <Route path='/sobre' element={<Sobre/>}/>
             <Route path='/painel' element={<Painel/>}/>
+            <Route path='/painel/criar' element={<Cadastro/>}/>
         </Switch>
       <Footer/>
       </Container>

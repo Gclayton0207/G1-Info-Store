@@ -18,7 +18,7 @@ const Produtos = ({busca}) => {
         );
         setSoftwares(data);
         setProdutos([...data])
-        console.log();
+      
       } catch (err) {
         console.error("ops! ocorreu um erro" + err);
       }
@@ -29,15 +29,15 @@ const Produtos = ({busca}) => {
           "https://projeto-final-m4.herokuapp.com/hardwares" 
         );
         setHardwares(data);
-        setProdutos((produtosAtuais)=>[...produtosAtuais, ...data])
+        setProdutos((produtosAtuais)=> [...produtosAtuais, ...data])
         
-        console.log(produtos);
       } catch (err) {
         console.error("ops! ocorreu um erro" + err);
       }
     }
     Api()
     Api2();
+    
 
   }, []);
 
@@ -49,13 +49,19 @@ const Produtos = ({busca}) => {
  return(
    <>{ busca===''? 
    <div  className={styles.ProdutosContainer}>
+    
    {produtos.length>0 && produtos.map((software, index)=> (
         <div key={index}className={styles.card}>
           <div className={styles.card2}>
             <img src={G1A} className={styles.img} />
             <div className={styles.info}>
               <p>{software.nome}</p>
-              <p>R${software.preço.toFixed(2).replace(".", ",")}</p>
+              
+              {/* Condicional inserida pois 
+              foi cadastrado sem preço e estava quebrando
+              a aplicação */}
+              <p>R${software.preço && !isNaN(software.preço) &&  software.preço.toFixed(2).replace(".", ",")}</p>
+             
             </div>
             <div className={styles.containerBotom}>
               <button className={styles.button}>
